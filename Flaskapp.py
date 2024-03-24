@@ -2,10 +2,10 @@ from azure.storage.blob import BlobServiceClient
 import os,time,shutil,datetime,subprocess
 
 
-storage_account_key = 'wrDJZyn6evl+1g6NGU9+rjZnHMehP3PK2uzwD5dLiI9WKUn+zBaHTCrgpAN3MfKqaU9zKW3cPw2J+AStveQ+jg=='
+storage_account_key = ''
 storage_account_name = 'iot2storageblobs'
 connection_string = 'DefaultEndpointsProtocol=https;AccountName=iot2storageblobs;AccountKey=wrDJZyn6evl+1g6NGU9+rjZnHMe>container_name = 'iotdata2'
-account_url = 'https://iot2storageblobs.blob.core.windows.net/iotdata2'
+account_url = ''
 
 def get_db_connection():
     conn = sqlite3.connect('/home/magnusjacobsen/Flaskapp/Database/SensorData.db')
