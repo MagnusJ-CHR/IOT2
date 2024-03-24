@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+    <h1>{% block title %} Welcome to the ToT Dashboard! {% endblock %}</h1>
+<table>
+<caption> Current data collected in Database </caption>
+        <tr>
+                <th>Timestamp</th>
+                <th>Battery</th>
+                <th>Motion</th>
+                <th>Flame</th>
+                <th>Temperature</th>
+                <th>Relativ Moisture</th>
+
+        </tr>
+    {% for Timestamp in SensorData %}
+        <tr>
+                <td>{{Timestamp[0]}}</td>
+                <td>{{Timestamp[1]}}</td>
+                <td>{{Timestamp[2]}}</td>
+                <td>{{Timestamp[3]}}</td>
+                <td>{{Timestamp[4]}}</td>
+                <td>{{Timestamp[5]}}</td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}

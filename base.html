@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" http-equiv="refresh" content="5">
+    <title>{% block title %} {% endblock %}- Dashboard for sensorer</title>
+    <style>
+        .Timestamp {
+            padding: 5px;
+            margin: 10px;
+            background-color: #f3f3f3
+        }
+    </style>
+<link rel="stylesheet" href ="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <nav>
+        <img src="/static/logo.png" alt="Logo for website." width=4%; height=5%;>
+        <a href="{{ url_for('index') }}">Sensor data</a>
+        <a href="#"></a>
+    </nav>
+    <div class="content">
+        {% block content %} {% endblock %}
+    </div>
+</body>
+</html>
